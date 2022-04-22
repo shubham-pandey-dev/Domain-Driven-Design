@@ -20,6 +20,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item { name = " + product.getName() + ", qty = " + qty + " } ";
+        return "Item { product = " + product.toString() + ", qty = " + qty + " } ";
     }
 }
