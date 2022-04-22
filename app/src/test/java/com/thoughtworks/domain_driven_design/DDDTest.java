@@ -6,9 +6,9 @@ package com.thoughtworks.domain_driven_design;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class AppTest {
+class DDDTest {
     @Test void appHasAGreeting() {
-        App classUnderTest = new App();
+        DDD classUnderTest = new DDD();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
 }
