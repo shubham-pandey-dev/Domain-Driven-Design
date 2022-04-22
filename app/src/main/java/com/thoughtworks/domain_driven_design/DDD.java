@@ -15,7 +15,9 @@ public class DDD {
         System.out.println("Domain Driven Design starts here\n");
         Cart cart = new Cart();
         Item iPadPro = new Item("IPadPro");
+        Item heroPen = new Item("Hero Ink Pen");
         cart.addItemToCart(iPadPro);
+        cart.addItemToCart(heroPen);
         System.out.println("Items in cart are: ");
         cart.printItemsInCart();
         System.out.println("\n");
