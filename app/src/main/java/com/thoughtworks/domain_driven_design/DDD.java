@@ -5,6 +5,7 @@ package com.thoughtworks.domain_driven_design;
 
 import com.thoughtworks.domain_driven_design.cart.Cart;
 import com.thoughtworks.domain_driven_design.model.Item;
+import com.thoughtworks.domain_driven_design.model.Product;
 
 public class DDD {
     public static void main(String[] args) {
@@ -14,14 +15,19 @@ public class DDD {
     void drive() {
         System.out.println("Domain Driven Design starts here\n");
         Cart cart = new Cart();
-        Item iPadPro = new Item("IPadPro");
-        Item heroPen = new Item("Hero Ink Pen");
-        Item gmBat = new Item("GM Cricket Bat", 2);
+        Item iPadPro = new Item(new Product("IPadPro"));
+        Item heroPen = new Item(new Product("Hero Ink Pen"));
+        Item gmBat = new Item(new Product("GM Cricket Bat"), 2);
         cart.addItemToCart(iPadPro);
         cart.addItemToCart(heroPen);
         cart.addItemToCart(gmBat);
         System.out.println("Items in cart are: ");
         cart.printItemsInCart();
-        System.out.println("\n");
+        System.out.println();
+
+        cart.removeItem(new Product("IPadPro"));
+        System.out.println("Items in cart are after removing all iPadPros: ");
+        cart.printItemsInCart();
+        System.out.println();
     }
 }
