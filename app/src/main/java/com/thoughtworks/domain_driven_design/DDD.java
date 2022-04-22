@@ -29,5 +29,7 @@ public class DDD {
         System.out.println("Items in cart are after removing all iPadPros: ");
         cart.printItemsInCart();
         System.out.println();
+        System.out.println("\nAll Removed Items from Cart: ");
+        cart.printRemovedItems();
     }
 }
