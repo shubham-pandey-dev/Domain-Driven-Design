@@ -29,7 +29,15 @@ public class DDD {
         System.out.println("Items in cart are after removing all iPadPros: ");
         cart.printItemsInCart();
         System.out.println();
-        System.out.println("\nAll Removed Items from Cart: ");
+        System.out.println("All Removed Items from Cart: ");
         cart.printRemovedItems();
+        System.out.println();
+
+        Cart cart2 = new Cart();
+        Cart cart3 = new Cart();
+        System.out.println("Are 2 Empty carts equals : " + cart2.equals(cart3));
+        cart2.addItemToCart(iPadPro);
+        cart3.addItemToCart(iPadPro);
+        System.out.println("Are 2 Same carts equal : " + cart2.equals(cart3));
     }
 }
