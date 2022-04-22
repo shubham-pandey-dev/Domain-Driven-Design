@@ -16,8 +16,10 @@ public class DDD {
         Cart cart = new Cart();
         Item iPadPro = new Item("IPadPro");
         Item heroPen = new Item("Hero Ink Pen");
+        Item gmBat = new Item("GM Cricket Bat", 2);
         cart.addItemToCart(iPadPro);
         cart.addItemToCart(heroPen);
+        cart.addItemToCart(gmBat);
         System.out.println("Items in cart are: ");
         cart.printItemsInCart();
         System.out.println("\n");
